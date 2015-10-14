@@ -24,6 +24,7 @@ public class Foda {
 		
 	}
 	
+	// pega a FK de uma tabela
 	public static int pegaFk(String table) throws SQLException{ 
 		String sql = "SELECT MAX(id"+table+") as id"+table+" FROM "+table+""; 
 		//PreparedStatement stmt = (PreparedStatement) Conn.conectaMySQL().prepareStatement(sql); 
